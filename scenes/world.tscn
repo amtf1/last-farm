@@ -1,6 +1,7 @@
 [gd_scene format=4 uid="uid://ogl4tn68iim7"]
 
 [ext_resource type="Texture2D" uid="uid://dorekvaacejpk" path="res://assets/environment/grama.png" id="1_rwgxs"]
+[ext_resource type="PackedScene" uid="uid://u65iw3u3wo0n" path="res://scenes/player.tscn" id="2_4wyf3"]
 [ext_resource type="PackedScene" uid="uid://cuq5ln28jwrgw" path="res://scenes/celeiro.tscn" id="2_rwgxs"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_k0juu"]
@@ -1393,6 +1394,10 @@ tile_set = SubResource("TileSet_6bl4t")
 [node name="Obstacles" type="Node2D" parent="." unique_id=210962199]
 y_sort_enabled = true
 
+[node name="celeiro" parent="." unique_id=2136815250 instance=ExtResource("2_rwgxs")]
+y_sort_enabled = true
+position = Vector2(739.48096, 376.72836)
+
 [node name="DefenseSlots" type="Node2D" parent="." unique_id=998561118]
 
 [node name="SpawnPoints" type="Node2D" parent="." unique_id=941085668]
@@ -1409,5 +1414,5 @@ position = Vector2(0, 394.42044)
 [node name="SpawnRight" type="Marker2D" parent="SpawnPoints" unique_id=2001845422]
 position = Vector2(1502.8508, 380.38965)
 
-[node name="celeiro" parent="." unique_id=2136815250 instance=ExtResource("2_rwgxs")]
-position = Vector2(-38.447052, 395.43607)
+[node name="Player" parent="." unique_id=1791284013 instance=ExtResource("2_4wyf3")]
+position = Vector2(163.86707, 354.67175)
