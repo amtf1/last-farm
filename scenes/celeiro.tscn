@@ -1,0 +1,20 @@
+[gd_scene format=3 uid="uid://cuq5ln28jwrgw"]
+
+[ext_resource type="Texture2D" uid="uid://b067yhvg80vmv" path="res://icon.svg" id="1_imsx6"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_6bl4t"]
+size = Vector2(126.94249, 48.51371)
+
+[node name="celeiro" type="StaticBody2D" unique_id=2136815250 groups=["celeiro"]]
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1316081681]
+texture = ExtResource("1_imsx6")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1570328811]
+position = Vector2(0.02167511, 38.744995)
+shape = SubResource("RectangleShape2D_6bl4t")
+disabled = true
+
+[node name="HealthBar" type="ProgressBar" parent="." unique_id=852774683]
+offset_right = 4.0
+offset_bottom = 27.0

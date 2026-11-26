@@ -1,7 +1,7 @@
 [gd_scene format=4 uid="uid://ogl4tn68iim7"]
 
 [ext_resource type="Texture2D" uid="uid://dorekvaacejpk" path="res://assets/environment/grama.png" id="1_rwgxs"]
-[ext_resource type="PackedScene" uid="uid://u65iw3u3wo0n" path="res://scenes/player.tscn" id="2_4wyf3"]
+[ext_resource type="PackedScene" uid="uid://cuq5ln28jwrgw" path="res://scenes/celeiro.tscn" id="2_rwgxs"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_k0juu"]
 texture = ExtResource("1_rwgxs")
@@ -1398,12 +1398,16 @@ y_sort_enabled = true
 [node name="SpawnPoints" type="Node2D" parent="." unique_id=941085668]
 
 [node name="SpawnUp" type="Marker2D" parent="SpawnPoints" unique_id=1810637959]
+position = Vector2(749.86646, 0)
 
 [node name="SpawnDown" type="Marker2D" parent="SpawnPoints" unique_id=1825893020]
+position = Vector2(742.0716, 748.3075)
 
 [node name="SpawnLeft" type="Marker2D" parent="SpawnPoints" unique_id=450838364]
+position = Vector2(0, 394.42044)
 
 [node name="SpawnRight" type="Marker2D" parent="SpawnPoints" unique_id=2001845422]
+position = Vector2(1502.8508, 380.38965)
 
-[node name="Player" parent="." unique_id=1791284013 instance=ExtResource("2_4wyf3")]
-position = Vector2(414.30402, 216.832)
+[node name="celeiro" parent="." unique_id=2136815250 instance=ExtResource("2_rwgxs")]
+position = Vector2(-38.447052, 395.43607)
