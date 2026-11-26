@@ -8,9 +8,6 @@ size = Vector2(123, 432)
 
 [node name="TestWorld" type="Node2D" unique_id=233641398]
 
-[node name="Player" parent="." unique_id=1791284013 instance=ExtResource("1_o2kn8")]
-position = Vector2(628, 392)
-
 [node name="StaticBody2D" type="StaticBody2D" parent="." unique_id=1140238792]
 position = Vector2(993, 510)
 
@@ -22,3 +19,6 @@ shape = SubResource("RectangleShape2D_6bl4t")
 position = Vector2(1.4999561, -154.00003)
 scale = Vector2(0.9609368, 3.3749998)
 texture = ExtResource("2_devkw")
+
+[node name="Player" parent="." unique_id=1791284013 instance=ExtResource("1_o2kn8")]
+position = Vector2(816, 327)

@@ -3,9 +3,8 @@
 [ext_resource type="Script" uid="uid://cwedtcwqhbcth" path="res://scripts/player.gd" id="1_g2els"]
 [ext_resource type="Texture2D" uid="uid://dk7bc4ud0s18m" path="res://assets/characters/player/idle/player.png" id="2_qhqgy"]
 
-[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_6bl4t"]
-radius = 70.0
-height = 238.0
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_sv253"]
+size = Vector2(138, 39)
 
 [node name="Player" type="CharacterBody2D" unique_id=1791284013]
 script = ExtResource("1_g2els")
@@ -15,6 +14,8 @@ speed = 450.0
 texture = ExtResource("2_qhqgy")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1701571676]
-shape = SubResource("CapsuleShape2D_6bl4t")
+position = Vector2(1, 101.5)
+shape = SubResource("RectangleShape2D_sv253")
 
 [node name="Camera2D" type="Camera2D" parent="." unique_id=1030324109]
+position_smoothing_enabled = true
