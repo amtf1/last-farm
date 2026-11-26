@@ -27,4 +27,4 @@ func tomando(quant : int):
 		print("Celeiro derrubado!")
 func _process(_delta):
 	if Input.is_action_just_pressed("levar_dano"):
-		tomando(15)
+		tomando(10)
